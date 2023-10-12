@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  event-db:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - event-db_container:/data/db
+
+volumes:
+  event-db_container:
